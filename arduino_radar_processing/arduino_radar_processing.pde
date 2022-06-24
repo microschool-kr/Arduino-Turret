@@ -7,11 +7,11 @@ int angle = 0;
 int distance1 = 0;
  
 void setup(){
-  
-  size(700, 700);
+  fullScreen();
   background(0);
   
-  //String portName = Serial.list()[0];
+  // open the serial port
+  // change "COM3" to your arduino port name such as "COM~" in Windows, "/dev/tty~~~" in Mac
   myPort = new Serial(this, "COM3", 9600);
   
 }
